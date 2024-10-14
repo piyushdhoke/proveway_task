@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Boxes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2 style="color: #06aa6b ; text-align: center;">bundle & save</h2>
+    <section class="box" id="box1">
+      
+    
+      <div style="display: flex; margin-top: 20px;">
+        <div>
+         <h4>1 Unit</h4>
+          <h5 style="padding-left: 10px;">Standard Price</h5>
+        </div>
+        <div style="margin-left: auto;">
+          <h4 style="padding-right: 20px;">$18.00 USD</h4>
+        </div>
+      </div>
+      <!-- <button class="toggle-btn">Toggle</button> -->
+      <div class="options hidden">
+        <label for="color1">Color: </label>
+        <input type="color" id="color1">
+        <label for="size1">Size: </label>
+        <input type="range" id="size1" min="100" max="400" value="200">
+      </div>
+    </section>
+
+    <section class="box" id="box2">
+      <div class="most-popular">
+        <h4>Most Popular</h4>
+      </div>
+    
+      <h6>2 Pair</h6>
+      <div style="display: flex; padding-top: 10px;">
+        <h4>2 Unit</h4>
+        <div style="margin-left: auto;">
+          <h4 style="padding-right: 20px;">$18.00 USD</h4>
+        </div>
+      </div>
+      
+      <div class="options hidden">
+        <label for="color2">Color: </label>
+        <input type="color" id="color2">
+        <label for="size2">Size: </label>
+        <input type="range" id="size2" min="100" max="400" value="200">
+      </div>
+    </section>
+    
+
+    <section class="box" id="box3">
+      <h6>3 Pair</h6>
+      <div style="display: flex;">
+        <h4>3 Unit</h4>
+        <div style="margin-left: auto;">
+          <h4 style="padding-right: 20px;">$24.00 USD</h4>
+        </div>
+        </div>
+      <div class="options hidden">
+        <label for="color3">Color: </label>
+        <input type="color" id="color3">
+        <label for="size3">Size: </label>
+        <input type="range" id="size3" min="100" max="400" value="200">
+      </div>
+    </section >
+
+    <section>
+      <button class="add-to-cart-btn" data-box="Bottom Box">+ Add to Cart</button>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
